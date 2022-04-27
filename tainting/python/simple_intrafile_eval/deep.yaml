@@ -1,0 +1,13 @@
+rules:
+  - id: taint-intrafile-test
+    mode: taint
+    pattern-sources:
+      - pattern: get_user_input(...)
+    pattern-sanitizers:
+      - pattern: sanitizing_func(...)
+    pattern-sinks:
+      - pattern: eval(...)
+    languages:
+      - python
+    message: Make sure that unverified user data can not reach `process_input`.
+    severity: WARNING

@@ -1,0 +1,12 @@
+rules:
+  - id: test-rule
+    languages:
+      - java
+    message: Test
+    mode: taint
+    pattern-sources:
+      - pattern: user_input
+    pattern-sinks:
+      - pattern: sink(...)
+    severity: WARNING
+

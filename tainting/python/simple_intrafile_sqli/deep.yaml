@@ -1,0 +1,14 @@
+rules:
+  - id: test-rule
+    languages:
+      - python
+    message: Test
+    mode: taint
+    pattern-sources:
+      - pattern: user_input
+    pattern-sanitizers:
+      - pattern: sanitize(...)
+    pattern-sinks:
+      - pattern: $CURSOR.execute(...)
+    severity: WARNING
+

@@ -1,0 +1,7 @@
+rules:
+- id: dangerous-call
+  patterns:
+    - pattern: dangerous("Select * FROM Employees")
+  message: Call of dangerous on non-constant value
+  languages: [java]
+  severity: WARNING

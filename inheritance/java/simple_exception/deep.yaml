@@ -1,0 +1,8 @@
+rules:
+- id: thorw-exception-example
+  pattern: |
+    throw new example.ExampleException(...);
+  message: Throwing an ExampleException
+  languages: [java]
+  severity: ERROR
+
