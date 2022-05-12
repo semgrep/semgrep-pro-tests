@@ -1,0 +1,8 @@
+rules:
+  - id: throw-exception-example
+    pattern: |
+      throw new ExampleException(...);
+    message: Throwing an ExampleException
+    languages:
+      - java
+    severity: ERROR
