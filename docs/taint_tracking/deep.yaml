@@ -1,0 +1,11 @@
+rules:
+  - id: dangerous-taint
+    mode: taint
+    pattern-sources:
+      - pattern: get_user_input(...);
+    pattern-sinks:
+      - pattern: dangerous(...);
+    message: Call of dangerous on tainted value
+    languages:
+      - java
+    severity: WARNING
