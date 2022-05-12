@@ -1,0 +1,7 @@
+rules:
+- id: dangerous-call-to-employees
+  patterns:
+    - pattern: dangerous("Select * FROM Employees")
+  message: Call of dangerous on employees table
+  languages: [java]
+  severity: WARNING
