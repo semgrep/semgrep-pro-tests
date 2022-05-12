@@ -1,18 +1,21 @@
 package example;
 
 public class App {
-    public void check(String s) {
-        if (is_bad(s)) {
-            // rule-id: throw-exception-example
-            throw new ExampleException(s);
-        }
+    public void log_contrived_exception(String s) {
+        ExampleException e = new ExampleException(s);
+        // ruleid: log-exception-example1-copy
+        logger.log_exception(e);
     }
-
-    public void check2(String s) {
-        if (is_bad(s)) {
-            // ok: throw-exception-example
-            throw new BadRequest(s);
-        }
+    
+    public void log_contrived_exception2(String s) {
+        BadRequest e = new BadRequest(s);
+        // deep: log-exception-example1-copy
+        logger.log_exception(e);
+    }
+    
+    public void log_contrived_exception3(String s) {
+        ArithmeticException e = new ArithmeticException(s);
+        // deep: log-exception-example1-copy
+        logger.log_exception(e);
     }
 }
-
