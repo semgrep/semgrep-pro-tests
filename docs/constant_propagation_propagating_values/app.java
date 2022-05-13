@@ -12,7 +12,7 @@ public class App {
         dangerous(EMPLOYEE_TABLE_NAME);
         
         String table_name = "Employees";
-        // deep: dangerous-call-to-employees   
+        // rule-id: dangerous-call-to-employees   
         dangerous(table_name);
 
         // rule-id: dangerous-call-to-employees
