@@ -5,7 +5,7 @@ public class App {
 
     public void example(String user_input) {
 
-        // rule-id: dangerous-call
+        // deep: dangerous-call
         dangerous("Select * FROM " + user_input);
 
         // rule-id: dangerous-call

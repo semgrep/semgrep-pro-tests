@@ -10,7 +10,7 @@ public class App {
 
     public void check2(String s) {
         if (is_bad(s)) {
-            // ok: throw-exception-example
+            // deep: throw-exception-example
             throw new BadRequest(s);
         }
     }

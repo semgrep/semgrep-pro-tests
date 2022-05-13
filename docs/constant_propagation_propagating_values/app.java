@@ -8,11 +8,11 @@ public class App {
         // ok:
         dangerous("Select * FROM " + user_input);
 
-        // rule-id: dangerous-call-to-employees
+        // deep: dangerous-call-to-employees
         dangerous("Select * FROM " + EMPLOYEE_TABLE_NAME);
         
         String table_name = "Employees";
-        // rule-id: dangerous-call-to-employees   
+        // deep: dangerous-call-to-employees   
         dangerous("Select * FROM " + table_name);
 
         // rule-id: dangerous-call-to-employees
