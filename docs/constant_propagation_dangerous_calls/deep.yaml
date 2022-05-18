@@ -1,0 +1,9 @@
+rules:
+  - id: dangerous-call
+    patterns:
+      - pattern: dangerous(...)
+      - pattern-not: dangerous("...")
+    message: Call of dangerous on non-constant value
+    languages:
+      - java
+    severity: WARNING
