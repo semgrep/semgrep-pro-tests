@@ -1,0 +1,21 @@
+rules:
+  - id: dangerous-call
+    metadata:
+      interfile: true
+    patterns:
+      - pattern: dangerous(...)
+      - pattern-not: dangerous("...")
+    message: Call of dangerous on non-constant value
+    languages:
+      - java
+    severity: WARNING
+  - id: dangerous-call1
+    metadata:
+      interfile: true
+    patterns:
+      - pattern: dangerous(...)
+      - pattern-not: dangerous("...")
+    message: Call of dangerous on non-constant value
+    languages:
+      - js
+    severity: WARNING

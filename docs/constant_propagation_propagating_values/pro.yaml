@@ -1,0 +1,17 @@
+rules:
+- id: dangerous-call-to-employees
+  metadata:
+    interfile: true
+  patterns:
+    - pattern: dangerous("Employees")
+  message: Call of dangerous on employees table
+  languages: [java]
+  severity: WARNING
+- id: dangerous-call-to-employees1
+  metadata:
+    interfile: true
+  patterns:
+    - pattern: dangerous("Employees")
+  message: Call of dangerous on employees table
+  languages: [js]
+  severity: WARNING
