@@ -9,6 +9,5 @@ rules:
       - pattern: dangerous(...)
     message: Call of dangerous on tainted value
     languages:
-      - js
-      - ts
+      - java
     severity: WARNING

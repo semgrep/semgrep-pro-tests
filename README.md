@@ -1,9 +1,9 @@
 # deep-semgrep-tests
 
-This repository provides DeepSemgrep example test cases. To find more information, see [DeepSemgrep documentation](https://semgrep.dev/docs/deepsemgrep/). This documentation includes guidelines on how to [install DeepSemgrep](https://semgrep.dev/docs/deepsemgrep/#obtaining-deepsemgrep), and work with `docs` [directory in this testing repository](https://semgrep.dev/docs/deepsemgrep/#cloning-deepsemgrep-testing-code-repository).
+This repository provides Semgrep Pro Engine example test cases. To find more information, see [Semgrep Pro Engine documentation](https://semgrep.dev/docs/deepsemgrep/). This documentation includes guidelines on how to [install Semgrep Pro](https://semgrep.dev/docs/deepsemgrep/deepsemgrep-introduction/#installing-semgrep-pro-engine-in-cli), and work with `docs` in this repository.
 
-To test DeepSemgrep, use the following command with your own rules:
+To test Semgrep Pro, use the following command with your own rules:
 
 ```sh
-semgrep --deep --config=myrule.yaml
+semgrep --pro --config=myrule.yaml .
 ```
