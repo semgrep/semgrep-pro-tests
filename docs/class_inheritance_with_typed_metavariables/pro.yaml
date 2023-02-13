@@ -1,5 +1,7 @@
 rules:
   - id: log-exception-example1-copy
+    metadata:
+      interfile: true
     pattern: |
       logger.log_exception((ExampleException $X), ...);
     message: Throwing an ExampleException

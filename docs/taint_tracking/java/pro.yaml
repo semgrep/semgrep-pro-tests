@@ -1,11 +1,14 @@
 rules:
   - id: dangerous-taint
     mode: taint
+    metadata:
+      interfile: true
     pattern-sources:
-      - pattern: get_user_input(...);
+      - pattern: get_user_input(...)
     pattern-sinks:
-      - pattern: dangerous(...);
+      - pattern: dangerous(...)
     message: Call of dangerous on tainted value
     languages:
-      - java
+      - js
+      - ts
     severity: WARNING

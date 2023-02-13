@@ -1,5 +1,7 @@
 rules:
   - id: throw-exception-example
+    metadata:
+      interfile: true
     pattern: |
       throw new ExampleException(...);
     message: Throwing an ExampleException
